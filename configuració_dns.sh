@@ -36,10 +36,10 @@ echo -e "" >> /etc/bind/db.eaa.itb
 echo -e "@             IN   NS   router.eaa.itb." >> /etc/bind/db.eaa.itb
 echo -e "localhost     IN   A    127.0.0.1" >> /etc/bind/db.eaa.itb
 echo -e "router        IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
-echo -e "web11.eaa.itb IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
-echo -e "web22.eaa.itb IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
-echo -e "monitor.eaa.itb IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
-echo -e "traefik.eaa.itb IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
+echo -e "web11         IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
+echo -e "web22         IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
+echo -e "monitor       IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
+echo -e "traefik       IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
 echo -e "bdd           IN   A    10.12.28.2" >> /etc/bind/db.eaa.itb
 echo -e "eq1           IN   A    10.12.28.101" >> /etc/bind/db.eaa.itb
 echo -e "eq2           IN   A    10.12.28.102" >> /etc/bind/db.eaa.itb
