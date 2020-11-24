@@ -151,14 +151,7 @@ sudo systemctl start docker.service ;
 "
 ssh -p 2222 $OPCSSH -t $USER@localhost "bash -c $CMD"
 
-echo "##############################Cració de docker swarm"
-cat << "FINAL" > /tmp/cmd
-cat $0
-#Com que tenim +1 nic, demana una xarxa (xarxa de dockers), li posem aquesta.
-#Lo mes correcte seria tenir una xarxa exclusiva de dockers
-# docker swarm init --advertise-addr 192.168.66.11 
-docker swarm init --advertise-addr 192.168.66.11 --default-addr-pool 10.77.0.0/16 --default-addr-pool-mask-length 24 # Xarxes del swarm, també adaptem per si de cas
-FINAL
+
 scp -P 2222 $OPCSSH  /tmp/cmd $USER@localhost:/home/$USER/cmd
 ssh -p 2222 $OPCSSH -t $USER@localhost bash "/home/$USER/cmd"
 
