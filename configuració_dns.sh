@@ -40,6 +40,7 @@ echo -e "web11         IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
 echo -e "web22         IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
 echo -e "monitor       IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
 echo -e "traefik       IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
+echo -e "ftp       IN   A    10.12.28.1" >> /etc/bind/db.eaa.itb
 echo -e "bdd           IN   A    10.12.28.2" >> /etc/bind/db.eaa.itb
 echo -e "eq1           IN   A    10.12.28.101" >> /etc/bind/db.eaa.itb
 echo -e "eq2           IN   A    10.12.28.102" >> /etc/bind/db.eaa.itb
@@ -62,6 +63,7 @@ echo -e "1           IN  PTR    web11.eaa.itb." >> /etc/bind/db.25
 echo -e "1           IN  PTR    web22.eaa.itb." >> /etc/bind/db.25
 echo -e "1           IN  PTR    monitor.eaa.itb." >> /etc/bind/db.25
 echo -e "1           IN  PTR    traefik.eaa.itb." >> /etc/bind/db.25
+echo -e "1           IN  PTR    ftp.eaa.itb." >> /etc/bind/db.25
 echo -e "2	         IN  PTR    bdd.eaa.itb." >> /etc/bind/db.25
 echo -e "101	     IN  PTR    eq1.eaa.itb." >> /etc/bind/db.25
 echo -e "102	     IN  PTR    eq2.eaa.itb." >> /etc/bind/db.25
