@@ -19,7 +19,7 @@ if [[ $(ip ad | grep "$IPINT") ]]; then
     echo -e "#El nostre servidor DNS" >> /etc/dhcp/dhcpd.conf
     echo -e "option domain-name-servers 10.12.28.1;" >> /etc/dhcp/dhcpd.conf
     echo -e "#El nom del nostre domini" >> /etc/dhcp/dhcpd.conf
-    echo -e "option domain-name \"EAA.itb\";" >> /etc/dhcp/dhcpd.conf
+    echo -e "option domain-name \"eaa.itb\";" >> /etc/dhcp/dhcpd.conf
     echo -e "" >> /etc/dhcp/dhcpd.conf
     echo -e "#Configurem la subnet." >> /etc/dhcp/dhcpd.conf
     echo -e "subnet 10.12.28.0 netmask 255.255.255.0 {" >> /etc/dhcp/dhcpd.conf
