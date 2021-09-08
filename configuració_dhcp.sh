@@ -39,6 +39,10 @@ else
 fi
 
 #CONFIGUREM LES IPTABLES PER A QUE ENS DONI INTERNET.
+# Abans de crear aquestes ip_tables, hem de confirmar a quin tipus de xarxa estem connectats, és a dir, si tenim la màquina connectada mitjançant adaptador pont, haurem d'utilitzar
+# un "prefix" de xarxa igual que el de la xarxa de l'anfitrió. En canvi, si la nostra màquina està connectada (en la interfície que es comunica amb l'exterior) amb el tipus NAT, haurem d'utilitzar
+# el prefix de xarxa 10.0.2, ja que és el que ve per defecte en la xarxa NAT.
+
 if [[ $(ip ad | grep "10.0.2") ]]; then
     NAT=$(ip ad | grep 10.0.2 -B2 | head -n1 | awk '{print $2}' | tr -d ":")
 
